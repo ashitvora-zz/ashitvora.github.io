@@ -1,0 +1,165 @@
+html, body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    padding-top: 53px;
+}
+
+h5{
+    font-weight: bold;
+}
+
+.navbar, .navbar-default{
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.navbar-default .navbar-brand{
+    color: rgb(222, 109, 52);
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 800;
+
+    -webkit-text-shadow: none;
+    -moz-text-shadow: none;
+    text-shadow: none;
+}
+
+.navbar-default .navbar-nav>li>a{
+    color: white;
+    border-bottom: 3px solid transparent;
+
+    -webkit-text-shadow: none;
+    -moz-text-shadow: none;
+    text-shadow: none;
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a.active{
+    color: white;
+    border-bottom-color: white;
+}
+
+.centered {
+    text-align: center;
+}
+
+#header{
+    padding-top: 300px;
+    padding-bottom: 300px;
+    background-image: url('../img/bg.jpeg');
+    background-repeat: no-repeat;
+}
+
+#header .title{
+    margin-top: -50px;
+    font-weight: 800;
+    font-size: 65px;
+    color: white;
+}
+
+#header .subtitle{
+    font-size: 30px;
+    color: white;
+}
+
+.section{
+    padding: 50px 100px 100px;
+}
+
+.section.footer{
+    padding: 50px 100px;
+}
+
+.section.darkbg{
+    background-color: rgb(222, 109, 52);
+    color: white;
+}
+
+.section .row{
+    margin-bottom: 20px;
+}
+
+.section .title{
+    font-weight: 100;
+    margin-bottom: 50px;
+    color: #444;
+}
+
+.section.darkbg .title{
+    color: white;
+}
+
+.section .subtitle{
+    font-weight: 300;
+}
+
+.section .tile{
+    background-color: #f3f3f3;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 0 3px #ddd;
+    border-radius: 4px;
+}
+
+.section.darkbg .tile{
+    background-color: white;
+    color: #444;
+}
+
+.blog-article{
+    border-bottom: 1px solid #eee;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+.blog-article pre{
+    background-color: #f8f8ff;
+    border: 1px solid #f3f3f3;
+}
+
+.blog-article pre code{
+
+}
+
+.blog-title{
+    font-weight: 100;
+    font-size: 35px;
+}
+
+.blog-title a{
+    color: rgb(222, 109, 52);
+}
+
+.blog-content{
+    font-size: 16px;
+    line-height: 2em;
+}
+
+.blog-pagination {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.blog-pagination a{
+    margin: auto 10px;
+    font-size: 16px;
+}
+
+.section .fa{
+    color: white;
+    font-size: 20px;
+    margin: auto 10px;
+}
