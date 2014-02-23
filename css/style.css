@@ -4,6 +4,7 @@ html, body {
 
 body{
     padding-top: 53px;
+    color: #4b494f;
 }
 
 h5{
@@ -25,14 +26,19 @@ h5{
 }
 
 .navbar-default .navbar-brand{
-    color: rgb(222, 109, 52);
+    color: #E0723D;
     text-transform: uppercase;
     font-size: 24px;
-    font-weight: 800;
+    /*font-family: 'Varela Round', sans-serif;*/
+    font-family: 'Lilita One', sans-serif;
 
     -webkit-text-shadow: none;
     -moz-text-shadow: none;
     text-shadow: none;
+}
+
+.navbar-default .navbar-brand:hover{
+    color: #E0723D;
 }
 
 .navbar-default .navbar-nav>li>a{
@@ -60,6 +66,7 @@ h5{
     padding-bottom: 300px;
     background-image: url('../img/bg.jpeg');
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #header .title{
@@ -83,7 +90,7 @@ h5{
 }
 
 .section.darkbg{
-    background-color: rgb(222, 109, 52);
+    background-color: #E0723D;
     color: white;
 }
 
@@ -94,7 +101,7 @@ h5{
 .section .title{
     font-weight: 100;
     margin-bottom: 50px;
-    color: #444;
+    color: #4b494f;
 }
 
 .section.darkbg .title{
@@ -116,7 +123,7 @@ h5{
 
 .section.darkbg .tile{
     background-color: white;
-    color: #444;
+    color: #4b494f;
 }
 
 .blog-article{
@@ -134,13 +141,26 @@ h5{
 
 }
 
+.blog-article h4{
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.blog-tags{
+    margin-top: 20px;
+}
+
+.blog-tags a{
+    text-transform: lowercase;
+}
+
 .blog-title{
-    font-weight: 100;
     font-size: 35px;
+    margin-bottom: 20px;
 }
 
 .blog-title a{
-    color: rgb(222, 109, 52);
+    color: #E0723D;
 }
 
 .blog-content{

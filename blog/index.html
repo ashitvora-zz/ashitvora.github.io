@@ -14,7 +14,7 @@
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/css/bootstrap.min.css">
   <!-- <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/css/bootstrap-theme.css"> -->
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Lilita+One' rel='stylesheet' type='text/css'>
 
   <!-- Custom styles for this template -->
   <link href="/css/style.css" rel="stylesheet" type="text/css" />
@@ -40,7 +40,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Alfanso</a>
+        <a class="navbar-brand" href="/">Alfanso</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -50,7 +50,6 @@
           <li><a href="/projects">Projects</a></li>
           <li><a href="/blog">Blog</a></li>
           <li><a href="/#contact">Contact</a></li>
-          <li><a href="/careers">We are Hiring</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -60,114 +59,72 @@
         <div class="row">
             <section class="col-lg-9">
                                     <article class='blog-article'>
-                        <h2 class='blog-title'><a href="/blog/2013/02/04/highlight">Syntax Highlighting</a></h2>
+                        <h2 class='blog-title'><a href="/blog/2014/02/22/setting-up-laravel-project-on-dreamhost">Setting Up Laravel Project on Dreamhost</a></h2>
 
                         <div class='blog-content'>
-                            <p>You're all programmers, right? And you're writing code snippets on your Sculpin
-powered blog? Yeah. So you want some highlighting with your static site generation?
-Here you go!</p>
+                            <h4>Setting default version of PHP to 5.4</h4>
 
-<pre><code>namespace Foo;
+<p>If the default version of PHP on your server is 5.2, you need to switch to 5.3 or 5.4.
+Luckily both are present on Dreamhost VPS by default but default is set to 5.2.</p>
 
-/**
- * Awesome Contrived Example.
- */
-class Bar implements BarInterface
-{
-    private $baz;
+<ul>
+<li>To switch to PHP 5.4, add <code>export PATH=/usr/local/php54/bin/:$PATH</code> to <code>~/.bash_profile</code> file.</li>
+<li>You can either close the terminal and restart or run <code>source ~/.bash_profile</code> to immediately reflect the changes.</li>
+<li>Run <code>php -v</code> to make sure PHP version is set to 5.4</li>
+</ul>
 
-    public function __construct(BazInterface $baz)
-    {
-        $this-&gt;baz = $baz;
-    }
+<h4>Installing Composer</h4>
 
-    public function doIt()
-    {
-        return $this-&gt;baz-&gt;do('it');
-    }
-}
-</code></pre>
+<ul>
+<li>Create a directory <code>mkdir -p ~/.php/5.4</code></li>
+<li>Create phprc file using <code>nano ~/.php/5.4/phprc</code> and add PHAR extension at the end of extensions list <code>extension = phar.so</code> and save the file</li>
+<li>Run <code>php -m | grep Phar</code> from terminal. If output is <code>PHAR</code>, everything went fine.</li>
+<li>Now download Composer using <code>curl -s https://getcomposer.org/installer | php</code> command.</li>
+<li>Give execute permission to composer.phar using <code>chmod u+x composer.phar</code> command.</li>
+<li>Run <code>php composer.phar</code> command and if you don't see any errors, you've successfully installed Composer.</li>
+</ul>
 
-<p>You can also use <a href="http://michelf.ca/projects/php-markdown/extra/#fenced-code-blocks">fenced code blocks</a> with a syntax declaration at the top.
-The markers are <code>~</code> instead of <code>`</code>.</p>
+<h4>Creating SSH Key on the Server</h4>
 
-<pre><code class="php">if ($fencedCodeBlock-&gt;syntax !== 'PHP') {
-    throw new UnexpectedValueException("wat");
-}
-</code></pre>
+<p>Create an SSH key on the server and add it to your Git repository (assuming you are using Git) using following steps.
+- Go to ~/.ssh firectory <code>cd ~/.ssh</code>
+- Generate ssh key using <code>ssh-keygen -t rsa -C "your_email@example.com"</code> command.
+- Press <em>ENTER</em> when prompted to enter file name, enter passphrase and re-enter passphrase.
+- Copy the ssh key you just created which is stored in <code>~/.ssh/id_rsa.pub</code> file and add it to your Git account.
+- Now you're all set to clone your repository.</p>
 
-<p>Like this addition to the skeleton? You can thank for <a href="https://github.com/Pawka">@Pawka</a>
-for suggesting it. :)</p>
+<h4>Final Steps</h4>
 
-                        </div>
-                                            </article>
-                                    <article class='blog-article'>
-                        <h2 class='blog-title'><a href="/blog/2012/11/27/lorem-ipsum">Lorem Ipsum</a></h2>
-
-                        <div class='blog-content'>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat congue
-lacus vel convallis. Cras nisi urna, ultrices non semper quis, ultricies sit
-amet est. Donec nunc velit, consequat a pulvinar a, eleifend id leo. Curabitur
-vel leo eros, vitae elementum purus. Integer id lorem hendrerit purus gravida
-commodo. Pellentesque nec rhoncus turpis. Cras feugiat odio eget quam semper at
-dictum lectus adipiscing. In ut est et mauris pulvinar placerat eget fringilla
-lectus.</p>
-
-<p>Ut in mauris augue, vitae facilisis purus. Nam ullamcorper pharetra lorem,
-cursus lobortis tellus facilisis congue. Etiam ac dapibus lectus. Nunc tempus
-ullamcorper felis, eu sagittis risus mollis aliquam. Mauris congue orci ac metus
-egestas porta nec ac lectus. Nam ac neque vitae quam sagittis dapibus. Morbi sit
-amet erat ac justo rutrum molestie id in tortor. Proin egestas tortor neque,
-eget fringilla nunc. Donec consequat purus ac risus dignissim dignissim.
-Praesent dui nisl, suscipit sed cursus in, dictum non elit. Nulla eget congue
-nisl.</p>
-
-<p>Morbi hendrerit porta ante, dapibus adipiscing nibh ornare at. Nullam iaculis
-porta ante, at semper tellus auctor nec. Vestibulum nec justo sed purus
-elementum venenatis. In hac habitasse platea dictumst. Fusce nibh tellus, varius
-non commodo sit amet, eleifend placerat nisl. Donec sit amet enim cursus ligula
-adipiscing auctor. Nullam sagittis porta ligula vitae rutrum. Aenean id sapien
-mi, elementum ullamcorper lectus. Aliquam erat volutpat. Fusce bibendum, leo
-ultricies lacinia viverra, mauris urna fermentum sem, id tempus lectus nunc
-faucibus magna. Vestibulum risus mi, tempus ut lobortis non, mattis sed diam.
-Nunc at mattis leo.</p>
-
-<p>Ut erat nunc, vestibulum sit amet sodales non, tincidunt nec justo. Integer
-vitae tortor massa. Vestibulum tincidunt commodo lacus, ac cursus lorem mattis
-eu. Donec ut magna vel urna fermentum congue. Donec laoreet neque at velit
-imperdiet luctus. In consectetur lacus eu purus dictum a imperdiet leo
-ullamcorper. Phasellus consequat feugiat tincidunt. Quisque vel orci in mauris
-fermentum pretium.</p>
-
-<p>Pellentesque rhoncus accumsan auctor. Nunc venenatis tellus non ante pharetra
-pretium. Sed rutrum, eros eu tristique luctus, neque sapien ultrices felis, id
-varius orci erat eget leo. Curabitur ut volutpat diam. Phasellus porta neque
-vitae nisi sodales ultrices. Etiam ultricies blandit lorem, id accumsan eros
-facilisis vel. Praesent nulla sapien, laoreet sit amet dapibus sit amet,
-tincidunt vitae neque. Vestibulum aliquam sollicitudin urna, in facilisis dui
-aliquam id.</p>
+<ul>
+<li>Update database credentials in <code>app\config\database.php</code> or in environment folder if any.</li>
+<li>Run <code>php composer.phar install</code> to install all required packages.</li>
+<li><code>php composer.phar install</code> should run all post install scripts which includes running migration and generating autload.php file.</li>
+<li>Final step is to map your public directory to your server's document root. Suppose your document root is public_html, delete that folder and run <code>ln -s &lt;path to your application's directory&gt; &lt;your document root&gt;</code> command. This will create a symbolic link so your don't have to change document root to public or go through any other trouble.</li>
+</ul>
 
                         </div>
-                                            </article>
-                                    <article class='blog-article'>
-                        <h2 class='blog-title'><a href="/blog/2012/11/26/and-then-there-was-textile-support">And Then There Was Textile Support</a></h2>
-
-                        <div class='blog-content'>
-                            <p><a href="https://github.com/netcarver/textile">Textile</a> support was added on November 26th, 2012. Markdown is great, but so is choice. More converters for all!</p>
-
-<p>In honor of this milestone, this post is written in <strong>Textile</strong>.</p>
-                        </div>
-                                                    <p class="tags">
-                            Tags:
-                                                        <a href="/blog/tags/sculpin" class="label label-success">sculpin</a>,                                                         <a href="/blog/tags/textile" class="label label-success">textile</a>                                                        </p>
-                                            </article>
-                                                    <nav class='blog-pagination'>
-                        <ul class='list-unstyled list-inline'>
-                                                    <li><a href="/blog/page/2.html">&larr; Older Posts</a></li>
                         
-                                                </ul>
-                    </nav>
-                            </section>
+                            <ul class='blog-tags list-unstyled list-inline'>
+                                <li>Tags: </li>
+
+                                                                <li>
+                                    <a href="/blog/tags/deployment"
+                                        class="label label-success">deployment
+                                    </a>
+                                </li>
+                                                                <li>
+                                    <a href="/blog/tags/dreamhost"
+                                        class="label label-success">dreamhost
+                                    </a>
+                                </li>
+                                                                <li>
+                                    <a href="/blog/tags/laravel"
+                                        class="label label-success">laravel
+                                    </a>
+                                </li>
+                                                            </ul>
+                                            </article>
+                                            </section>
         </div>
     </div>
 
