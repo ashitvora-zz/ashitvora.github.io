@@ -3,9 +3,16 @@
     <title><![CDATA[Alfanso]]></title>
     <link href="/atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2014-02-24T06:40:40+01:00</updated>
+    <updated>2014-02-24T07:12:46+01:00</updated>
     <id>/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Creating a website with blog using Sculpin]]></title>
+            <link href="/blog/2014/02/24/creating-a-website-with-blog-using-sculpin"/>
+            <updated>2014-02-24T00:00:00+01:00</updated>
+            <id>/blog/2014/02/24/creating-a-website-with-blog-using-sculpin</id>
+            <content type="html"><![CDATA[]]></content>
+        </entry>
             <entry>
             <title type="html"><![CDATA[Setting Up Laravel Project on Dreamhost]]></title>
             <link href="/blog/2014/02/22/setting-up-laravel-project-on-dreamhost"/>
@@ -51,12 +58,5 @@ Luckily both are present on Dreamhost VPS by default but default is set to 5.2.<
 <li>Final step is to map your public directory to your server's document root. Suppose your document root is public_html, delete that folder and run <code>ln -s &lt;path to your application's directory&gt; &lt;your document root&gt;</code> command. This will create a symbolic link so your don't have to change document root to public or go through any other trouble.</li>
 </ul>
 ]]></content>
-        </entry>
-            <entry>
-            <title type="html"><![CDATA[]]></title>
-            <link href="/_posts/2014-02-24-creating-a-website-with-blog-using-sculpin"/>
-            <updated>2014-02-24T00:00:00+01:00</updated>
-            <id>/_posts/2014-02-24-creating-a-website-with-blog-using-sculpin</id>
-            <content type="html"><![CDATA[]]></content>
         </entry>
     </feed>
