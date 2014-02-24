@@ -3,16 +3,9 @@
     <title><![CDATA[Alfanso]]></title>
     <link href="/atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2014-02-24T07:12:46+01:00</updated>
+    <updated>2014-02-24T07:16:22+01:00</updated>
     <id>/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
-            <entry>
-            <title type="html"><![CDATA[Creating a website with blog using Sculpin]]></title>
-            <link href="/blog/2014/02/24/creating-a-website-with-blog-using-sculpin"/>
-            <updated>2014-02-24T00:00:00+01:00</updated>
-            <id>/blog/2014/02/24/creating-a-website-with-blog-using-sculpin</id>
-            <content type="html"><![CDATA[]]></content>
-        </entry>
             <entry>
             <title type="html"><![CDATA[Setting Up Laravel Project on Dreamhost]]></title>
             <link href="/blog/2014/02/22/setting-up-laravel-project-on-dreamhost"/>
