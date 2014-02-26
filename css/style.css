@@ -1,3 +1,9 @@
+/*
+ Orange: #f36557
+ Green:  #6bb327
+*/
+
+
 html, body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -17,7 +23,7 @@ h5{
 
 .navbar, .navbar-default{
     background-image: none;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #222832;
     border: none;
 
     -webkit-box-shadow: none;
@@ -30,7 +36,7 @@ h5{
 }
 
 .navbar-default .navbar-brand{
-    color: #E0723D;
+    color: #f36557;
     text-transform: uppercase;
     font-size: 24px;
     /*font-family: 'Varela Round', sans-serif;*/
@@ -42,7 +48,7 @@ h5{
 }
 
 .navbar-default .navbar-brand:hover{
-    color: #E0723D;
+    color: #f36557;
 }
 
 .navbar-default .navbar-nav>li>a{
@@ -58,7 +64,7 @@ h5{
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a.active{
     color: white;
-    border-bottom-color: white;
+    border-bottom-color: #f36557;
 }
 
 .centered {
@@ -94,8 +100,7 @@ h5{
 }
 
 .section.darkbg{
-    background-color: #E0723D;
-    color: white;
+    background-color: #F4F4F4;
 }
 
 .section .row{
@@ -106,10 +111,6 @@ h5{
     font-weight: 100;
     margin-bottom: 50px;
     color: #4b494f;
-}
-
-.section.darkbg .title{
-    color: white;
 }
 
 .section .subtitle{
@@ -123,11 +124,6 @@ h5{
     padding: 10px 20px;
     box-shadow: 0 0 3px #ddd;
     border-radius: 4px;
-}
-
-.section.darkbg .tile{
-    background-color: white;
-    color: #4b494f;
 }
 
 .blog-article{
@@ -167,12 +163,29 @@ h5{
 
 .blog-title,
 .blog-title a{
-    color: #E0723D;
+    color: #4b494f;
 }
 
 .blog-content{
     font-size: 16px;
     line-height: 2em;
+}
+
+.fa{
+    color: #f36557;
+}
+
+.blog-metadata li{
+    margin-right: 20px;
+}
+
+.blog-metadata li.tag,
+.blog-metadata li.category{
+    margin-right: 10px;
+}
+
+.blog-metadata .no-margin{
+    margin: 0;
 }
 
 .blog-pagination {
@@ -181,9 +194,10 @@ h5{
 }
 
 .blog-pagination li {
-    border: 1px solid #e5e5e5;
-    padding: 5px 15px;
-    margin-top: 50px;
+    border: 2px solid #f36557;
+    padding: 5px 15px !important;
+    margin: 50px 5px auto;
+    color: #f36557;
 
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -192,11 +206,11 @@ h5{
 
 .blog-pagination a{
     margin: auto 10px;
-    font-size: 16px;
+    font-size: 14px;
+    color: #f36557;
 }
 
 .section .fa{
-    color: white;
     font-size: 20px;
     margin: auto 10px;
 }
