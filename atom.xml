@@ -3,9 +3,24 @@
     <title><![CDATA[Alfanso]]></title>
     <link href="/atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2014-02-24T07:16:22+01:00</updated>
+    <updated>2014-02-26T09:24:30+01:00</updated>
     <id>/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Free Coming Soon page using Bootstrap 3]]></title>
+            <link href="/blog/2014/02/26/coming-soon-page-bootstrap3"/>
+            <updated>2014-02-26T00:00:00+01:00</updated>
+            <id>/blog/2014/02/26/coming-soon-page-bootstrap3</id>
+            <content type="html"><![CDATA[<p><img src="http://i.imgur.com/yJpWoil.jpg" alt="Free Coming Soon Page" /></p>
+
+<div class='text-center'>
+  <a href='https://db.tt/rxPWvNsO' class='btn btn-default' title='Free Coming Soon Page Demo' target='_blank'>Demo</a>
+  <a href='https://db.tt/qpRSZl1y' class='btn btn-primary' title='Download Free Coming Soon Page' target='_blank'>Download (0.45 MB)</a>
+</div>
+
+<div class='vspace'> </div>
+]]></content>
+        </entry>
             <entry>
             <title type="html"><![CDATA[Setting Up Laravel Project on Dreamhost]]></title>
             <link href="/blog/2014/02/22/setting-up-laravel-project-on-dreamhost"/>

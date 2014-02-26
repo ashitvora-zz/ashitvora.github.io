@@ -11,6 +11,10 @@ h5{
     font-weight: bold;
 }
 
+.vspace{
+    margin-bottom: 100px;
+}
+
 .navbar, .navbar-default{
     background-image: none;
     background-color: rgba(0, 0, 0, 0.8);
@@ -137,8 +141,10 @@ h5{
     border: 1px solid #f3f3f3;
 }
 
-.blog-article pre code{
-
+.blog-article img{
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 5px;
 }
 
 .blog-article h4{
