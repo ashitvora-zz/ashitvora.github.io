@@ -117,7 +117,7 @@ h5{
 }
 
 .section .tile{
-    background-color: #f3f3f3;
+    background-color: #e5e5e5;
     border: 1px solid #ddd;
     margin: 10px;
     padding: 10px 20px;
@@ -131,14 +131,14 @@ h5{
 }
 
 .blog-article{
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #e5e5e5;
     margin-bottom: 50px;
     padding-bottom: 50px;
 }
 
 .blog-article pre{
     background-color: #f8f8ff;
-    border: 1px solid #f3f3f3;
+    border: 1px solid #e5e5e5;
 }
 
 .blog-article img{
@@ -178,6 +178,16 @@ h5{
 .blog-pagination {
     margin-bottom: 50px;
     text-align: center;
+}
+
+.blog-pagination li {
+    border: 1px solid #e5e5e5;
+    padding: 5px 15px;
+    margin-top: 50px;
+
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
 }
 
 .blog-pagination a{
