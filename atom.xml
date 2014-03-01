@@ -3,7 +3,7 @@
     <title><![CDATA[Alfanso]]></title>
     <link href="/atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2014-02-26T11:14:48+01:00</updated>
+    <updated>2014-03-01T06:43:26+01:00</updated>
     <id>/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
             <entry>
@@ -18,7 +18,7 @@
   <a href='https://db.tt/qpRSZl1y' class='btn btn-primary' title='Download Free Coming Soon Page' target='_blank'>Download (0.45 MB)</a>
 </div>
 
-<div class='vspace'> </div>
+<p><br></p>
 ]]></content>
         </entry>
             <entry>
@@ -47,6 +47,8 @@ Luckily both are present on Dreamhost VPS by default but default is set to 5.2.<
 <li>Give execute permission to composer.phar using <code>chmod u+x composer.phar</code> command.</li>
 <li>Run <code>php composer.phar</code> command and if you don't see any errors, you've successfully installed Composer.</li>
 </ul>
+
+<p><a name='readmore'></a></p>
 
 <h4>Creating SSH Key on the Server</h4>
 
