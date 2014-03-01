@@ -69,7 +69,7 @@ h5{
 #header{
     padding-top: 300px;
     padding-bottom: 300px;
-    background-image: url('https://www.dropbox.com/s/4tfqp4w5dsmdtjt/bg.jpeg');
+    background-image: url('../img/bg.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
 }
