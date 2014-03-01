@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title><![CDATA[Alfanso]]></title>
-    <link href="http://www.alfanso.com/atom.xml" rel="self"/>
-    <link href="http://www.alfanso.com/"/>
-    <updated>2014-03-01T07:25:37+01:00</updated>
-    <id>http://www.alfanso.com/</id>
+    <link href="/atom.xml" rel="self"/>
+    <link href="/"/>
+    <updated>2014-03-01T11:08:39+01:00</updated>
+    <id>/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
             <entry>
             <title type="html"><![CDATA[Free Coming Soon page using Bootstrap 3]]></title>
-            <link href="http://www.alfanso.com/blog/2014/02/26/coming-soon-page-bootstrap3"/>
+            <link href="/blog/2014/02/26/coming-soon-page-bootstrap3"/>
             <updated>2014-02-26T00:00:00+01:00</updated>
-            <id>http://www.alfanso.com/blog/2014/02/26/coming-soon-page-bootstrap3</id>
+            <id>/blog/2014/02/26/coming-soon-page-bootstrap3</id>
             <content type="html"><![CDATA[<p><img src="http://i.imgur.com/yJpWoil.jpg" alt="Free Coming Soon Page" /></p>
 
 <div class='text-center'>
@@ -21,9 +21,9 @@
         </entry>
             <entry>
             <title type="html"><![CDATA[Setting Up Laravel Project on Dreamhost]]></title>
-            <link href="http://www.alfanso.com/blog/2014/02/22/setting-up-laravel-project-on-dreamhost"/>
+            <link href="/blog/2014/02/22/setting-up-laravel-project-on-dreamhost"/>
             <updated>2014-02-22T00:00:00+01:00</updated>
-            <id>http://www.alfanso.com/blog/2014/02/22/setting-up-laravel-project-on-dreamhost</id>
+            <id>/blog/2014/02/22/setting-up-laravel-project-on-dreamhost</id>
             <content type="html"><![CDATA[<h4>Setting default version of PHP to 5.4</h4>
 
 <p>If the default version of PHP on your server is 5.2, you need to switch to 5.3 or 5.4.
