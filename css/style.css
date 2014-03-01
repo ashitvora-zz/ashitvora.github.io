@@ -18,7 +18,7 @@ h5{
 
 .navbar, .navbar-default{
     background-image: none;
-    background-color: #222832;
+    background-color: #170402;
     border: none;
     margin-bottom: 0;
 
@@ -155,7 +155,7 @@ h5{
 .blog-content{
     font-size: 16px;
     line-height: 2em;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .fa{
@@ -173,6 +173,19 @@ h5{
 
 .blog-metadata .no-margin{
     margin: 0;
+}
+
+.blog-readmore,
+.blog-readmore:hover{
+    font-size: 14px;
+    border: 2px solid #f36557;
+    padding: 5px 15px !important;
+    margin: 50px 5px auto;
+    color: #f36557;
+
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
 }
 
 .blog-pagination {
