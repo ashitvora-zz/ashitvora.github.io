@@ -71,7 +71,7 @@
       <p>As a front-end developer, you have to do many things again and again like</p>
 
 <ul>
-<li>Compiling you Sass files to CSS files.</li>
+<li>Compiling Sass files to CSS files.</li>
 <li>Concatinating all CSS files into a single CSS file.</li>
 <li>Compress your final CSS file.</li>
 <li>Compile your CoffeeScript files into Javascript files.</li>
@@ -121,16 +121,16 @@ gulp.task('default', function(){
 Assuming all your Sass files are in <strong>sass</strong> directory and you want your compiled css files in <strong>css</strong> directory.</p>
 
 <pre><code>var sass = require('gulp-sass'); // add this at the top
-</code></pre>
 
-<p>// Task to compile Sass to CSS
-    gulp.task('sass', function () {
-      gulp.src('sass/**/*.sass')
-          .pipe(sass())
-          .pipe(gulp.dest('css'));
-    });</p>
+// Task to compile Sass to CSS
+gulp.task('sass', function () {
+  gulp.src('sass/**/*.sass')
+      .pipe(sass())
+      .pipe(gulp.dest('css'));
+});
 
-<pre><code>// Run this task when "default" task is run
+
+// Run this task when "default" task is run
 gulp.task('default', ['sass']);
 </code></pre>
 
