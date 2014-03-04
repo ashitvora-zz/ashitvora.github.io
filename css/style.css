@@ -218,3 +218,20 @@ h5{
     font-size: 20px;
     margin: auto 10px;
 }
+
+.tweet-box{
+    margin: 50px auto;
+}
+
+.tweet-box .tweet-body{
+    font-size: 18px;
+    color: #999;
+    font-weight: 100;
+    line-height: 2em;
+    padding: 10px;
+    border: 1px dashed #ccc;
+}
+
+.tweet-box .cta .fa{
+    color: white;
+}
