@@ -119,8 +119,12 @@ h5{
 }
 
 .blog-article pre{
-    background-color: #f8f8ff;
-    border: 1px solid #e5e5e5;
+    background-color: #f9f9f9;
+    border: 1px solid #f1f1f1;
+}
+
+.blog-article pre code{
+    background-color: transparent !important;
 }
 
 .blog-article img{
