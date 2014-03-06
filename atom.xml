@@ -3,18 +3,35 @@
     <title><![CDATA[Alfanso]]></title>
     <link href="/atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2014-03-04T07:12:41+01:00</updated>
+    <updated>2014-03-06T10:25:52+01:00</updated>
     <id>/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
             <entry>
+            <title type="html"><![CDATA[Single page conference website using Bootstrap]]></title>
+            <link href="/blog/2014/03/06/single-page-conference-website-using-bootstrap"/>
+            <updated>2014-03-06T00:00:00+01:00</updated>
+            <id>/blog/2014/03/06/single-page-conference-website-using-bootstrap</id>
+            <content type="html"><![CDATA[<p><img src="http://i.imgur.com/Rf51j6o.jpg" alt="Top Banner" />
+<img src="http://i.imgur.com/kPJ6D4Q.png" alt="Speakers" />
+<img src="http://i.imgur.com/QCjftwz.png" alt="Schedule" />
+<img src="http://i.imgur.com/pnMvQDO.png" alt="Sponsors and Venue" />
+<img src="http://i.imgur.com/icZUl5l.png" alt="Code of Conduct and Contact" /></p>
+
+<div class='text-center'>
+  <a href='https://db.tt/v1CERWx4' class='btn btn-default' title='Demo' target='_blank'>Demo</a>
+  <a href='https://db.tt/wlitzlRV' class='btn btn-primary' title='Download' target='_blank'>Download (1.07 MB)</a>
+</div>
+]]></content>
+        </entry>
+            <entry>
             <title type="html"><![CDATA[Improve your Front-end workflow using Gulp.js]]></title>
-            <link href="/blog/2014-03-04-improve-your-front-end-workflow-using-gulpjs"/>
+            <link href="/blog/2014/03/04/improve-your-front-end-workflow-using-gulpjs"/>
             <updated>2014-03-04T00:00:00+01:00</updated>
-            <id>/blog/2014-03-04-improve-your-front-end-workflow-using-gulpjs</id>
+            <id>/blog/2014/03/04/improve-your-front-end-workflow-using-gulpjs</id>
             <content type="html"><![CDATA[<p>As a front-end developer, you have to do many things again and again like</p>
 
 <ul>
-<li>Compiling you Sass files to CSS files.</li>
+<li>Compiling Sass files to CSS files.</li>
 <li>Concatinating all CSS files into a single CSS file.</li>
 <li>Compress your final CSS file.</li>
 <li>Compile your CoffeeScript files into Javascript files.</li>
@@ -64,16 +81,16 @@ gulp.task('default', function(){
 Assuming all your Sass files are in <strong>sass</strong> directory and you want your compiled css files in <strong>css</strong> directory.</p>
 
 <pre><code>var sass = require('gulp-sass'); // add this at the top
-</code></pre>
 
-<p>// Task to compile Sass to CSS
-    gulp.task('sass', function () {
-      gulp.src('sass/**/*.sass')
-          .pipe(sass())
-          .pipe(gulp.dest('css'));
-    });</p>
+// Task to compile Sass to CSS
+gulp.task('sass', function () {
+  gulp.src('sass/**/*.sass')
+      .pipe(sass())
+      .pipe(gulp.dest('css'));
+});
 
-<pre><code>// Run this task when "default" task is run
+
+// Run this task when "default" task is run
 gulp.task('default', ['sass']);
 </code></pre>
 
@@ -366,9 +383,9 @@ gulp.task('default', ['sass', 'coffeescript', 'images-opt', 'hint', 'watch']);
         </entry>
             <entry>
             <title type="html"><![CDATA[Free Coming Soon page using Bootstrap 3]]></title>
-            <link href="/blog/2014-02-26-coming-soon-page-bootstrap3"/>
+            <link href="/blog/2014/02/26/coming-soon-page-bootstrap3"/>
             <updated>2014-02-26T00:00:00+01:00</updated>
-            <id>/blog/2014-02-26-coming-soon-page-bootstrap3</id>
+            <id>/blog/2014/02/26/coming-soon-page-bootstrap3</id>
             <content type="html"><![CDATA[<p><img src="http://i.imgur.com/yJpWoil.jpg" alt="Free Coming Soon Page" /></p>
 
 <div class='text-center'>
@@ -379,9 +396,9 @@ gulp.task('default', ['sass', 'coffeescript', 'images-opt', 'hint', 'watch']);
         </entry>
             <entry>
             <title type="html"><![CDATA[Setting Up Laravel Project on Dreamhost]]></title>
-            <link href="/blog/2014-02-22-setting-up-laravel-project-on-dreamhost"/>
+            <link href="/blog/2014/02/22/setting-up-laravel-project-on-dreamhost"/>
             <updated>2014-02-22T00:00:00+01:00</updated>
-            <id>/blog/2014-02-22-setting-up-laravel-project-on-dreamhost</id>
+            <id>/blog/2014/02/22/setting-up-laravel-project-on-dreamhost</id>
             <content type="html"><![CDATA[<h4>Setting default version of PHP to 5.4</h4>
 
 <p>If the default version of PHP on your server is 5.2, you need to switch to 5.3 or 5.4.

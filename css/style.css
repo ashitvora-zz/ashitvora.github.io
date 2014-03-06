@@ -115,7 +115,7 @@ h5{
 
 .blog-article{
     margin-bottom: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 .blog-article pre{
@@ -129,7 +129,6 @@ h5{
 
 .blog-article img{
     width: 100%;
-    border: 1px solid #ddd;
     padding: 5px;
 }
 
