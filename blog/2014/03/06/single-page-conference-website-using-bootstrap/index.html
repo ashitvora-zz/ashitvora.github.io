@@ -64,7 +64,11 @@
           </li>
                   </ul>
       </li>
-          </ul>
+      
+      <li>
+        <a href="http://www.alfanso.com/blog/2014/03/06/single-page-conference-website-using-bootstrap#disqus_thread"></a>
+      </li>
+    </ul>
 
 
     <div class='blog-content'>
@@ -114,20 +118,26 @@
 
 
 
-        <div id="disqus_thread"></div>
+        <a name="disqus_thread"></a>
+    <div id="disqus_thread"></div>
+
     <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
       var disqus_shortname = 'alfanso'; // required: replace example with your forum shortname
 
       /* * * DON'T EDIT BELOW THIS LINE * * */
       (function() {
+        // Disqus Comments
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+        // Disqus comments count
+        var s = document.createElement('script'); s.async = true; s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
       })();
     </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     
 
         <nav class="blog-pagination">
