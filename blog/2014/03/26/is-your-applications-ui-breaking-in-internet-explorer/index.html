@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Single page conference website using Bootstrap &mdash; Alfanso</title>
-  <meta name="description" content="Single page website for conference, event, workshop, seminar created using twitter bootstrap framework.">
-  <meta name="keywords" content="bootstrap, responsive, conference website, landing page">
+  <title>Is your Application&#039;s UI breaking in Internet Explorer? &mdash; Alfanso</title>
+  <meta name="description" content="Internet Explorer&#039;s stylesheet limit">
+  <meta name="keywords" content="css, stylesheet, internet explorer, ie">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,12 +41,12 @@
 
   <div class="container">
   <article class='blog-article col-lg-10'>
-    <h1 class='blog-title'>Single page conference website using Bootstrap</h1>
+    <h1 class='blog-title'>Is your Application&#039;s UI breaking in Internet Explorer?</h1>
 
     <ul class='blog-metadata list-unstyled list-inline'>
             <li>
         <i class='fa fa-calendar'></i>
-        <span>06 March 2014</span>
+        <span>26 March 2014</span>
       </li>
       
       <!--
@@ -60,44 +60,42 @@
         <ul class="list-unstyled list-inline">
           <li class='no-margin'><i class='fa fa-folder'></i></li>
                     <li class='category'>
-            <a href="/blog/categories/design">design</a>
+            <a href="/blog/categories/development">development</a>
           </li>
                   </ul>
       </li>
       
       <li>
-        <a href="http://www.alfanso.com/blog/2014/03/06/single-page-conference-website-using-bootstrap#disqus_thread"></a>
+        <a href="http://www.alfanso.com/blog/2014/03/26/is-your-applications-ui-breaking-in-internet-explorer#disqus_thread"></a>
       </li>
     </ul>
 
 
     <div class='blog-content'>
-      <p><img src="http://i.imgur.com/Rf51j6o.jpg" alt="Top Banner" />
-<img src="http://i.imgur.com/kPJ6D4Q.png" alt="Speakers" />
-<img src="http://i.imgur.com/QCjftwz.png" alt="Schedule" />
-<img src="http://i.imgur.com/pnMvQDO.png" alt="Sponsors and Venue" />
-<img src="http://i.imgur.com/icZUl5l.png" alt="Code of Conduct and Contact" /></p>
+      <p>I'm working on a side project during weekends which is a management application of real estate agents. They use use Internet Explorer only on their Windows machine.</p>
 
-<div class='text-center'>
-  <a href='https://db.tt/v1CERWx4' class='btn btn-default' title='Demo' target='_blank'>Demo</a>
-  <a href='https://db.tt/wlitzlRV' class='btn btn-primary' title='Download' target='_blank'>Download (1.07 MB)</a>
-</div>
+<p>I came across a weird bug where few CSS styles were not getting applied at all :(.
+I was concatenating all my stylesheets into a single CSS file to avoid extra http requests.
+After some research, I found that there's a limit on number of stylesheet rules we can define in a single CSS file.
+<a href="http://blogs.msdn.com/b/ieinternals/archive/2011/05/14/10164546.aspx">It can not be more than 4095 in a single CSS file</a>.</p>
+
+<p><strong>Isn't that weird?</strong></p>
 
     </div>
 
         <ul class="list-unstyled list-inline blog-metadata">
       <li class='no-margin'><i class='fa fa-tags'></i></li>
             <li class='tag'>
-        <a href="/blog/tags/bootstrap" class="label label-default">bootstrap</a>
+        <a href="/blog/tags/css" class="label label-default">css</a>
       </li>
             <li class='tag'>
-        <a href="/blog/tags/responsive" class="label label-default">responsive</a>
+        <a href="/blog/tags/stylesheet" class="label label-default">stylesheet</a>
       </li>
             <li class='tag'>
-        <a href="/blog/tags/conference%20website" class="label label-default">conference website</a>
+        <a href="/blog/tags/internet%20explorer" class="label label-default">internet explorer</a>
       </li>
             <li class='tag'>
-        <a href="/blog/tags/landing%20page" class="label label-default">landing page</a>
+        <a href="/blog/tags/ie" class="label label-default">ie</a>
       </li>
           </p>
     </ul>
@@ -106,9 +104,9 @@
     <div class='tweet-box'>
       <h5>Thanks for reading! If you liked this article, would you mind sharing it by clicking the tweet button below?</h5>
       <p class='tweet-body'>
-        I'm reading 'Single page conference website using Bootstrap' at http://www.alfanso.com /blog/2014/03/06/single-page-conference-website-using-bootstrap by @alfansohq
+        I'm reading 'Is your Application&#039;s UI breaking in Internet Explorer?' at http://www.alfanso.com /blog/2014/03/26/is-your-applications-ui-breaking-in-internet-explorer by @alfansohq
         <div class='text-right'>
-          <a class='cta btn btn-primary' target='_blank' href='http://twitter.com/?status=Single page conference website using Bootstrap http://www.alfanso.com/blog/2014/03/06/single-page-conference-website-using-bootstrap by @alfansohq'>
+          <a class='cta btn btn-primary' target='_blank' href='http://twitter.com/?status=Is your Application&#039;s UI breaking in Internet Explorer? http://www.alfanso.com/blog/2014/03/26/is-your-applications-ui-breaking-in-internet-explorer by @alfansohq'>
             <i class='fa fa-twitter'></i>
             Click to Tweet
           </a>
@@ -142,14 +140,9 @@
 
         <nav class="blog-pagination">
       <ul class='list-unstyled list-inline'>
-                <li>
-            <a class="next" href="/blog/2014/03/16/toolkit-to-increase-productivity" title="List of softwares, hardwares, tools I use to be more productive">
-              <span class="title">&larr; List of softwares, hardwares, tools I use to be more productive</span>
-            </a>
-        </li>
                         <li>
-            <a class="previous" href="/blog/2014/03/04/improve-front-end-workflow-using-gulpjs" title="Improve front-end workflow using gulp.js">
-              <span class="title">Improve front-end workflow using gulp.js &rarr;</span>
+            <a class="previous" href="/blog/2014/03/16/toolkit-to-increase-productivity" title="List of softwares, hardwares, tools I use to be more productive">
+              <span class="title">List of softwares, hardwares, tools I use to be more productive &rarr;</span>
             </a>
         </li>
               </ul>

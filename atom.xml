@@ -3,9 +3,74 @@
     <title><![CDATA[Alfanso]]></title>
     <link href="/atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2014-03-07T16:31:39+01:00</updated>
+    <updated>2014-03-26T08:02:19+01:00</updated>
     <id>/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Is your Application&#039;s UI breaking in Internet Explorer?]]></title>
+            <link href="/blog/2014/03/26/is-your-applications-ui-breaking-in-internet-explorer"/>
+            <updated>2014-03-26T00:00:00+01:00</updated>
+            <id>/blog/2014/03/26/is-your-applications-ui-breaking-in-internet-explorer</id>
+            <content type="html"><![CDATA[<p>I'm working on a side project during weekends which is a management application of real estate agents. They use use Internet Explorer only on their Windows machine.</p>
+
+<p>I came across a weird bug where few CSS styles were not getting applied at all :(.
+I was concatenating all my stylesheets into a single CSS file to avoid extra http requests.
+After some research, I found that there's a limit on number of stylesheet rules we can define in a single CSS file.
+<a href="http://blogs.msdn.com/b/ieinternals/archive/2011/05/14/10164546.aspx">It can not be more than 4095 in a single CSS file</a>.</p>
+
+<p><strong>Isn't that weird?</strong></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[List of softwares, hardwares, tools I use to be more productive]]></title>
+            <link href="/blog/2014/03/16/toolkit-to-increase-productivity"/>
+            <updated>2014-03-16T00:00:00+01:00</updated>
+            <id>/blog/2014/03/16/toolkit-to-increase-productivity</id>
+            <content type="html"><![CDATA[<p>We are always looking for and playing with new tools, softwares, hardwares to increase our productivity so we waste less time on unproductive stuff and more on productive work. Here are list of few that I use.</p>
+
+<h4>Hardware</h4>
+
+<ul>
+<li><a href="http://apple.com/in/mac-pro">15' Macbook Pro</a> with Mavericks OS</li>
+</ul>
+
+<h4>Web based softwares</h4>
+
+<ul>
+<li><a href="http://invoicemachine.com">InvoiceMachine</a> - For sending invoice</li>
+<li><a href="http://trello.com">Trello</a> - To-do list</li>
+<li><a href="http://digitalocean.com">Digital Ocean</a> - VPS</li>
+<li><a href="http://bitbucket.com">Bitbucket</a> - To host git repositories</li>
+</ul>
+
+<p><a name='readmore'></a></p>
+
+<h4>Softwares</h4>
+
+<ul>
+<li><a href="http://www.sublimetext.com/">Sublime</a> - Text Editor</li>
+<li><a href="http://mouapp.com">Mou</a> - Markdown Editor</li>
+<li><a href="http://skype.com">Skype</a> - Communicating with team</li>
+<li><a href="http://gotomeeting.com">Go To Meeting</a>, <a href="http://webex.com">WebEx</a> - Conference call</li>
+<li><a href="http://iterm2.com">iTerm2</a> - Terminal for mac</li>
+<li><a href="http://evernote.com">Evernote</a> - Notes taking</li>
+<li><a href="http://www.techsmith.com/jing.html">Jing</a> - Recording and sharing screencasts and screenshots</li>
+<li>iCal - Scheduling calls</li>
+<li><a href="http://dropbox.com">Dropbox</a> - Sharing files</li>
+</ul>
+
+<h4>Tools and Frameworks</h4>
+
+<ul>
+<li><a href="http://sculpin.io">Sculpin</a> - Static site generator for this blog</li>
+<li>HTML, CSS, <a href="http://sass-lang.com">Scss</a>, <a href="http://getbootstrap.com">Twitter Bootstrap</a>, Javascript, <a href="http://jquery.com">jQuery</a>, <a href="http://angularjs.com">AngularJS</a> - For front-end development</li>
+<li><a href="http://laravel.com">Laravel</a> - For back-end development</li>
+<li><a href="http://gulpjs.com">Gulp.js</a> - To automate front-end workflow</li>
+</ul>
+
+<p>Feel free to share tools you use to increase your productivity.</p>
+]]></content>
+        </entry>
             <entry>
             <title type="html"><![CDATA[Single page conference website using Bootstrap]]></title>
             <link href="/blog/2014/03/06/single-page-conference-website-using-bootstrap"/>
