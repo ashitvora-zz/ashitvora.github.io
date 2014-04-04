@@ -3,7 +3,7 @@
     <title><![CDATA[Alfanso]]></title>
     <link href="/atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2014-04-04T09:38:38+02:00</updated>
+    <updated>2014-04-04T09:50:16+02:00</updated>
     <id>/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
             <entry>
@@ -20,8 +20,9 @@
 <p>Here's how I do it.
 Add following two lines at the end of the file <code>app\start\global.php</code></p>
 
-<p>Blade::setContentTags('<%', '%>');
-  Blade::setEscapedContentTags('<%%', '%%>');</p>
+<pre><code>Blade::setContentTags('&lt;%', '%&gt;');
+Blade::setEscapedContentTags('&lt;%%', '%%&gt;');
+</code></pre>
 
 <p>After this you might want to delete all the generated view files in <code>app\storage\views</code>.
 Now on you can use <% and %> in your blade files and  in your handlebars or other similar client side templating languages.
