@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Is your Application&#039;s UI breaking in Internet Explorer? &mdash; Alfanso</title>
-  <meta name="description" content="Internet Explorer&#039;s stylesheet limit">
-  <meta name="keywords" content="css, stylesheet, internet explorer, ie">
+  <title>Quick Tip - Fixing HandleBars and Blade Tags Conflict. &mdash; Alfanso</title>
+  <meta name="description" content="PHP Blade Templating engine uses {{ }} and {{{ }}} tags and the same is used by HandleBars and AngularJS templating engine. Here&#039;s a quick and easy way to fix this conflict.">
+  <meta name="keywords" content="laravel, blade, handlebars, angularjs, emberjs, knockoutjs, mustache">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,12 +41,12 @@
 
   <div class="container">
   <article class='blog-article col-lg-10'>
-    <h1 class='blog-title'>Is your Application&#039;s UI breaking in Internet Explorer?</h1>
+    <h1 class='blog-title'>Quick Tip - Fixing HandleBars and Blade Tags Conflict.</h1>
 
     <ul class='blog-metadata list-unstyled list-inline'>
             <li>
         <i class='fa fa-calendar'></i>
-        <span>26 March 2014</span>
+        <span>04 April 2014</span>
       </li>
       
       <!--
@@ -66,36 +66,52 @@
       </li>
       
       <li>
-        <a href="http://www.alfanso.com/blog/2014/03/26/is-your-applications-ui-breaking-in-internet-explorer#disqus_thread"></a>
+        <a href="http://www.alfanso.com/blog/2014/04/04/fixing-handlebars-and-blade-tags-conflict#disqus_thread"></a>
       </li>
     </ul>
 
 
     <div class='blog-content'>
-      <p>I'm working on a side project during weekends which is a management application of real estate agents. They use use Internet Explorer only on their Windows machine.</p>
+      <p>If you are using Laravel, you must be most probably be using it's default Blade templating language as well. It is really a simple and easy to learn templating language. I personally find it easier to use than Twig.</p>
 
-<p>I came across a weird bug where few CSS styles were not getting applied at all :(.
-I was concatenating all my stylesheets into a single CSS file to avoid extra http requests.
-After some research, I found that there's a limit on number of stylesheet rules we can define in a single CSS file.
-<a href="http://blogs.msdn.com/b/ieinternals/archive/2011/05/14/10164546.aspx">It can not be more than 4095 in a single CSS file</a>.</p>
+<p>Blade uses double and triple curly brackets as it's tags. Handlebars, AngularJS templates and Mustache uses the same.</p>
 
-<p><strong>Isn't that weird?</strong></p>
+<p>One of the easiest ways to fix this issue is to change the tags of Blade to something else.</p>
+
+<p>Here's how I do it.
+Add following two lines at the end of the file <code>app\start\global.php</code></p>
+
+<p>Blade::setContentTags('<%', '%>');
+  Blade::setEscapedContentTags('<%%', '%%>');</p>
+
+<p>After this you might want to delete all the generated view files in <code>app\storage\views</code>.
+Now on you can use <% and %> in your blade files and  in your handlebars or other similar client side templating languages.
+Feel free to share your solutions in the comments below.</p>
 
     </div>
 
         <ul class="list-unstyled list-inline blog-metadata">
       <li class='no-margin'><i class='fa fa-tags'></i></li>
             <li class='tag'>
-        <a href="/blog/tags/css" class="label label-default">css</a>
+        <a href="/blog/tags/laravel" class="label label-default">laravel</a>
       </li>
             <li class='tag'>
-        <a href="/blog/tags/stylesheet" class="label label-default">stylesheet</a>
+        <a href="/blog/tags/blade" class="label label-default">blade</a>
       </li>
             <li class='tag'>
-        <a href="/blog/tags/internet%20explorer" class="label label-default">internet explorer</a>
+        <a href="/blog/tags/handlebars" class="label label-default">handlebars</a>
       </li>
             <li class='tag'>
-        <a href="/blog/tags/ie" class="label label-default">ie</a>
+        <a href="/blog/tags/angularjs" class="label label-default">angularjs</a>
+      </li>
+            <li class='tag'>
+        <a href="/blog/tags/emberjs" class="label label-default">emberjs</a>
+      </li>
+            <li class='tag'>
+        <a href="/blog/tags/knockoutjs" class="label label-default">knockoutjs</a>
+      </li>
+            <li class='tag'>
+        <a href="/blog/tags/mustache" class="label label-default">mustache</a>
       </li>
           </p>
     </ul>
@@ -104,9 +120,9 @@ After some research, I found that there's a limit on number of stylesheet rules 
     <div class='tweet-box'>
       <h5>Thanks for reading! If you liked this article, would you mind sharing it by clicking the tweet button below?</h5>
       <p class='tweet-body'>
-        I'm reading 'Is your Application&#039;s UI breaking in Internet Explorer?' at http://www.alfanso.com /blog/2014/03/26/is-your-applications-ui-breaking-in-internet-explorer by @alfansohq
+        I'm reading 'Quick Tip - Fixing HandleBars and Blade Tags Conflict.' at http://www.alfanso.com /blog/2014/04/04/fixing-handlebars-and-blade-tags-conflict by @alfansohq
         <div class='text-right'>
-          <a class='cta btn btn-primary' target='_blank' href='http://twitter.com/?status=Is your Application&#039;s UI breaking in Internet Explorer? http://www.alfanso.com/blog/2014/03/26/is-your-applications-ui-breaking-in-internet-explorer by @alfansohq'>
+          <a class='cta btn btn-primary' target='_blank' href='http://twitter.com/?status=Quick Tip - Fixing HandleBars and Blade Tags Conflict. http://www.alfanso.com/blog/2014/04/04/fixing-handlebars-and-blade-tags-conflict by @alfansohq'>
             <i class='fa fa-twitter'></i>
             Click to Tweet
           </a>
@@ -140,14 +156,9 @@ After some research, I found that there's a limit on number of stylesheet rules 
 
         <nav class="blog-pagination">
       <ul class='list-unstyled list-inline'>
-                <li>
-            <a class="next" href="/blog/2014/04/04/fixing-handlebars-and-blade-tags-conflict" title="Quick Tip - Fixing HandleBars and Blade Tags Conflict.">
-              <span class="title">&larr; Quick Tip - Fixing HandleBars and Blade Tags Conflict.</span>
-            </a>
-        </li>
                         <li>
-            <a class="previous" href="/blog/2014/03/16/toolkit-to-increase-productivity" title="List of softwares, hardwares, tools I use to be more productive">
-              <span class="title">List of softwares, hardwares, tools I use to be more productive &rarr;</span>
+            <a class="previous" href="/blog/2014/03/26/is-your-applications-ui-breaking-in-internet-explorer" title="Is your Application&#039;s UI breaking in Internet Explorer?">
+              <span class="title">Is your Application&#039;s UI breaking in Internet Explorer? &rarr;</span>
             </a>
         </li>
               </ul>

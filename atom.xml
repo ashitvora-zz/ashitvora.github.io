@@ -3,9 +3,31 @@
     <title><![CDATA[Alfanso]]></title>
     <link href="/atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2014-03-26T08:02:19+01:00</updated>
+    <updated>2014-04-04T09:38:38+02:00</updated>
     <id>/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Quick Tip - Fixing HandleBars and Blade Tags Conflict.]]></title>
+            <link href="/blog/2014/04/04/fixing-handlebars-and-blade-tags-conflict"/>
+            <updated>2014-04-04T00:00:00+02:00</updated>
+            <id>/blog/2014/04/04/fixing-handlebars-and-blade-tags-conflict</id>
+            <content type="html"><![CDATA[<p>If you are using Laravel, you must be most probably be using it's default Blade templating language as well. It is really a simple and easy to learn templating language. I personally find it easier to use than Twig.</p>
+
+<p>Blade uses double and triple curly brackets as it's tags. Handlebars, AngularJS templates and Mustache uses the same.</p>
+
+<p>One of the easiest ways to fix this issue is to change the tags of Blade to something else.</p>
+
+<p>Here's how I do it.
+Add following two lines at the end of the file <code>app\start\global.php</code></p>
+
+<p>Blade::setContentTags('<%', '%>');
+  Blade::setEscapedContentTags('<%%', '%%>');</p>
+
+<p>After this you might want to delete all the generated view files in <code>app\storage\views</code>.
+Now on you can use <% and %> in your blade files and  in your handlebars or other similar client side templating languages.
+Feel free to share your solutions in the comments below.</p>
+]]></content>
+        </entry>
             <entry>
             <title type="html"><![CDATA[Is your Application&#039;s UI breaking in Internet Explorer?]]></title>
             <link href="/blog/2014/03/26/is-your-applications-ui-breaking-in-internet-explorer"/>
@@ -31,7 +53,7 @@ After some research, I found that there's a limit on number of stylesheet rules 
 <h4>Hardware</h4>
 
 <ul>
-<li><a href="http://apple.com/in/mac-pro">15' Macbook Pro</a> with Mavericks OS</li>
+<li><a href="http://apple.com/in/mac-pro">15" Macbook Pro</a> with Mavericks OS</li>
 </ul>
 
 <h4>Web based softwares</h4>

@@ -66,6 +66,27 @@ h5{
     text-align: center;
 }
 
+.btn-multi-line{
+    padding: 10px 35px;
+}
+
+.btn-multi-line .primary{
+    display: block;
+    font-size: 30px;
+    line-height: 1.8em;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: -5px;
+}
+
+.btn-multi-line .secondary{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    display: block;
+}
+
 #header{
     padding-top: 300px;
     padding-bottom: 300px;
@@ -121,6 +142,8 @@ h5{
 .blog-article pre{
     background-color: #f9f9f9;
     border: 1px solid #f1f1f1;
+    max-height: 400px;
+    overflow: auto;
 }
 
 .blog-article pre code{
@@ -159,7 +182,11 @@ h5{
 .blog-content{
     font-size: 16px;
     line-height: 2em;
-    margin-bottom: 20px;
+    margin: 20px auto;
+}
+
+.blog-content > p{
+    margin-bottom: 30px;
 }
 
 .fa{

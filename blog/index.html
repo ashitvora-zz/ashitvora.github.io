@@ -45,6 +45,80 @@
                 
                     
                     <article class='blog-article'>
+                        <h1 class='blog-title'><a href="/blog/2014/04/04/fixing-handlebars-and-blade-tags-conflict">Quick Tip - Fixing HandleBars and Blade Tags Conflict.</a></h1>
+
+                        <ul class='blog-metadata list-unstyled list-inline'>
+                                                    <li>
+                            <i class='fa fa-calendar'></i>
+                            <span>04 April 2014</span>
+                          </li>
+                          
+                          <!--
+                                                    <li>
+                            <i class='fa fa-user'></i>
+                            <span>Ashit Vora</span>
+                          </li>
+                                                    -->
+
+                                                    <li>
+                            <ul class="list-unstyled list-inline">
+                                <li class='no-margin'><i class='fa fa-folder'></i></li>
+                                                                <li class='category'>
+                                    <a href="/blog/categories/development">development</a>
+                                </li>
+                                                            </ul>
+                          </li>
+                                                  </ul>
+
+                        <div class='blog-content'>
+                            <p>If you are using Laravel, you must be most probably be using it's default Blade templating language as well. It is really a simple and easy to learn templating language. I personally find it easier to use than Twig.</p>
+
+<p>Blade uses double and triple curly brackets as it's tags. Handlebars, AngularJS templates and Mustache uses the same.</p>
+
+<p>One of the easiest ways to fix this issue is to change the tags of Blade to something else.</p>
+
+<p>Here's how I do it.
+Add following two lines at the end of the file <code>app\start\global.php</code></p>
+
+<p>Blade::setContentTags('<%', '%>');
+  Blade::setEscapedContentTags('<%%', '%%>');</p>
+
+<p>After this you might want to delete all the generated view files in <code>app\storage\views</code>.
+Now on you can use <% and %> in your blade files and  in your handlebars or other similar client side templating languages.
+Feel free to share your solutions in the comments below.</p>
+
+
+                                                    </div>
+
+
+                                                <ul class='blog-tags list-unstyled list-inline'>
+                            <li class='no-margin'><i class='fa fa-tags'></i></li>
+                                                        <li class='tag'>
+                                <a href="/blog/tags/laravel" class="label label-default">laravel</a>
+                            </li>
+                                                        <li class='tag'>
+                                <a href="/blog/tags/blade" class="label label-default">blade</a>
+                            </li>
+                                                        <li class='tag'>
+                                <a href="/blog/tags/handlebars" class="label label-default">handlebars</a>
+                            </li>
+                                                        <li class='tag'>
+                                <a href="/blog/tags/angularjs" class="label label-default">angularjs</a>
+                            </li>
+                                                        <li class='tag'>
+                                <a href="/blog/tags/emberjs" class="label label-default">emberjs</a>
+                            </li>
+                                                        <li class='tag'>
+                                <a href="/blog/tags/knockoutjs" class="label label-default">knockoutjs</a>
+                            </li>
+                                                        <li class='tag'>
+                                <a href="/blog/tags/mustache" class="label label-default">mustache</a>
+                            </li>
+                                                    </ul>
+                                            </article>
+                
+                    
+                    <article class='blog-article'>
                         <h1 class='blog-title'><a href="/blog/2014/03/26/is-your-applications-ui-breaking-in-internet-explorer">Is your Application&#039;s UI breaking in Internet Explorer?</a></h1>
 
                         <ul class='blog-metadata list-unstyled list-inline'>
@@ -80,7 +154,6 @@ After some research, I found that there's a limit on number of stylesheet rules 
 
 <p><strong>Isn't that weird?</strong></p>
 
-                            <br>
 
                                                     </div>
 
@@ -140,9 +213,9 @@ After some research, I found that there's a limit on number of stylesheet rules 
 </ul>
 
 <p>
-                            <br>
 
-                                                            <a href='/blog/2014/03/16/toolkit-to-increase-productivity#readmore' title='Read &quot;List of softwares, hardwares, tools I use to be more productive&quot;' class='blog-readmore'>Keep reading &rarr;</a>
+                                                            <br>
+                                <a href='/blog/2014/03/16/toolkit-to-increase-productivity#readmore' title='Read &quot;List of softwares, hardwares, tools I use to be more productive&quot;' class='blog-readmore'>Keep reading &rarr;</a>
                                                     </div>
 
 
@@ -205,7 +278,6 @@ After some research, I found that there's a limit on number of stylesheet rules 
   <a href='https://db.tt/wlitzlRV' class='btn btn-primary' title='Download' target='_blank'>Download (1.07 MB)</a>
 </div>
 
-                            <br>
 
                                                     </div>
 
@@ -270,9 +342,9 @@ After some research, I found that there's a limit on number of stylesheet rules 
 </ul>
 
 <p>
-                            <br>
 
-                                                            <a href='/blog/2014/03/04/improve-front-end-workflow-using-gulpjs#readmore' title='Read &quot;Improve front-end workflow using gulp.js&quot;' class='blog-readmore'>Keep reading &rarr;</a>
+                                                            <br>
+                                <a href='/blog/2014/03/04/improve-front-end-workflow-using-gulpjs#readmore' title='Read &quot;Improve front-end workflow using gulp.js&quot;' class='blog-readmore'>Keep reading &rarr;</a>
                                                     </div>
 
 
@@ -286,63 +358,6 @@ After some research, I found that there's a limit on number of stylesheet rules 
                             </li>
                                                         <li class='tag'>
                                 <a href="/blog/tags/gulp.js" class="label label-default">gulp.js</a>
-                            </li>
-                                                    </ul>
-                                            </article>
-                
-                    
-                    <article class='blog-article'>
-                        <h1 class='blog-title'><a href="/blog/2014/02/26/coming-soon-page-bootstrap3">Coming Soon page using Bootstrap 3</a></h1>
-
-                        <ul class='blog-metadata list-unstyled list-inline'>
-                                                    <li>
-                            <i class='fa fa-calendar'></i>
-                            <span>26 February 2014</span>
-                          </li>
-                          
-                          <!--
-                                                    <li>
-                            <i class='fa fa-user'></i>
-                            <span>Ashit Vora</span>
-                          </li>
-                                                    -->
-
-                                                    <li>
-                            <ul class="list-unstyled list-inline">
-                                <li class='no-margin'><i class='fa fa-folder'></i></li>
-                                                                <li class='category'>
-                                    <a href="/blog/categories/design">design</a>
-                                </li>
-                                                            </ul>
-                          </li>
-                                                  </ul>
-
-                        <div class='blog-content'>
-                            <p><img src="http://i.imgur.com/yJpWoil.jpg" alt="Free Coming Soon Page" /></p>
-
-<div class='text-center'>
-  <a href='https://db.tt/rxPWvNsO' class='btn btn-default' title='Free Coming Soon Page Demo' target='_blank'>Demo</a>
-  <a href='https://db.tt/qpRSZl1y' class='btn btn-primary' title='Download Free Coming Soon Page' target='_blank'>Download (0.45 MB)</a>
-</div>
-
-                            <br>
-
-                                                    </div>
-
-
-                                                <ul class='blog-tags list-unstyled list-inline'>
-                            <li class='no-margin'><i class='fa fa-tags'></i></li>
-                                                        <li class='tag'>
-                                <a href="/blog/tags/ui" class="label label-default">ui</a>
-                            </li>
-                                                        <li class='tag'>
-                                <a href="/blog/tags/bootstrap" class="label label-default">bootstrap</a>
-                            </li>
-                                                        <li class='tag'>
-                                <a href="/blog/tags/coming%20soon" class="label label-default">coming soon</a>
-                            </li>
-                                                        <li class='tag'>
-                                <a href="/blog/tags/freebie" class="label label-default">freebie</a>
                             </li>
                                                     </ul>
                                             </article>
